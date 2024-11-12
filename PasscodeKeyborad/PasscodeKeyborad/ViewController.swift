@@ -80,6 +80,10 @@ class ViewController: UIViewController {
 //MARK: Handle CompleteDigit passcode
 extension  ViewController {
     
+    @objc func didTappedForgot(){
+        print("didTappedForgot")
+    }
+    
     private func completeDigit(passcod: String){
         
         view.backgroundColor = .gray
@@ -191,11 +195,6 @@ extension ViewController{
         ])
     }
     
-    
-    @objc func didTappedForgot(){
-        print("didTappedForgot")
-    }
-    
     // MARK: Setup Circle View Passcode
     private func setupCircleView(){
         
@@ -297,7 +296,6 @@ extension ViewController{
         stackButton.alignment = .fill
         stackButton.spacing = 15
     }
-    
 }
 
 
